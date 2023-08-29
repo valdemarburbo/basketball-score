@@ -71,5 +71,7 @@ function increment() {
 function reset() {
     homeScore = 0;
     guestScore = 0;
+    periodCount = 0;
+    periodCountEl.textContent = periodCount;
     render();
 }

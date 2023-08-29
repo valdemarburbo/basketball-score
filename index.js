@@ -1,8 +1,10 @@
 let homeScore = 0;
 let guestScore = 0;
+let periodCount = 0;
 
 let homeScoreEl = document.getElementById("home-score-el");
 let guestScoreEl = document.getElementById("guest-score-el");
+let periodCountEl = document.getElementById("period-count");
 
 function render() {
     homeScoreEl.textContent = homeScore;
@@ -49,6 +51,21 @@ function addTwoGuest() {
 function addThreeGuest() {
     guestScore += 3;
     render();
+}
+
+function decrement() {
+    periodCount--
+    if (periodCount < 0) {
+        periodCount = 0
+        periodCountEl.textContent = periodCount;
+    } else {
+        periodCountEl.textContent = periodCount;
+    }
+}
+    
+function increment() {
+    periodCount++
+    periodCountEl.textContent = periodCount;
 }
 
 function reset() {

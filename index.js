@@ -7,6 +7,17 @@ let guestScoreEl = document.getElementById("guest-score-el");
 function render() {
     homeScoreEl.textContent = homeScore;
     guestScoreEl.textContent = guestScore;
+
+    if (homeScore > guestScore) {
+        homeScoreEl.style.borderColor = "goldenrod"
+        guestScoreEl.style.borderColor = "black"
+    } else if (guestScore > homeScore) {
+        homeScoreEl.style.borderColor = "black"
+        guestScoreEl.style.borderColor = "goldenrod"
+    } else {
+        homeScoreEl.style.borderColor = "black"
+        guestScoreEl.style.borderColor = "black"
+    }
 }
 
 function addOneHome() {

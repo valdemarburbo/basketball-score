@@ -9,21 +9,26 @@
 <body>
     <div class="container">
         <div>
-            <h3>HOME</h3>
+            <h3 class="heading">HOME</h3>
 
             <div id="home-score-el">0</div>
-            <button onclick="addOneHome();">+1</button>
-            <button onclick="addTwoHome();">+2</button>
-            <button onclick="addThreeHome();">+3</button>
-        </div>
-        <button onclick="reset()">New Game</button>
-        <div>
-            <h3>GUEST</h3>
 
-            <div id="guest-score-el">0</div>
-            <button onclick="addOneGuest()">+1</button>
-            <button onclick="addTwoGuest()">+2</button>
-            <button onclick="addThreeGuest()">+3</button>
+            <div class="buttons">
+                <button class="score-btn" onclick="addOneHome();">+1</button>
+                <button class="score-btn" onclick="addTwoHome();">+2</button>
+                <button class="score-btn" onclick="addThreeHome();">+3</button>
+            </div>
+        </div>
+        <button class="reset-btn" onclick="reset()">New Game</button>
+        <div>
+            <h3 class="heading">GUEST</h3>
+
+        <div id="guest-score-el">0</div>
+            <div class="buttons">
+                <button class="score-btn" onclick="addOneGuest()">+1</button>
+                <button class="score-btn" onclick="addTwoGuest()">+2</button>
+                <button class="score-btn" onclick="addThreeGuest()">+3</button>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>

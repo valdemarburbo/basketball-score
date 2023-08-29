@@ -52,9 +52,46 @@ body {
 
 .reset-btn {
     height: 4vw;
+    display: block;
 }
 
 .buttons {
     display: flex;
     justify-content: space-around;
+}
+
+.center-el {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-el > h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 4vh
+}
+
+.operators {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.operators > button {
+    border-style: none;
+    border-radius: 0.25rem;
+    width: 3vw;
+    height: auto;
+}
+
+.period-count {
+    color: #BE123C;
+    background-color: black;
+    border-radius: 0.5rem;
+    width: 9vw;
+    height: 10vh;
+    text-align: center;
+    font-family: "Digital";
+    font-size: 8vw;
+    margin: 0 auto 1rem auto;
 }

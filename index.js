@@ -18,3 +18,18 @@ function addThreeHome() {
     homeScore += 3;
     homeScoreEl.textContent = homeScore;
 }
+
+function addOneGuest() {
+    guestScore += 1;
+    guestScoreEl.textContent = guestScore;
+}
+
+function addTwoGuest() {
+    guestScore += 2;
+    guestScoreEl.textContent = guestScore;
+}
+
+function addThreeGuest() {
+    guestScore += 3;
+    guestScoreEl.textContent = guestScore;
+}
